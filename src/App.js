@@ -23,7 +23,7 @@ function App() {
   // Simple backend check
   const checkBackend = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/health');
+      const response = await fetch('https://fitness-backend-ig0z.onrender.com/api/health');
       const data = await response.json();
       console.log('Backend status:', data.status);
     } catch (error) {
